@@ -32,7 +32,7 @@ app.use('/api/post', postRoutes);
 app.use('/api/comment', commentRoutes);
 
 // Serve static files from the 'dist' directory
-app.use(express.static(path.join(__dirname, 'client', 'dist')));
+app.use(express.static(path.join(__dirname, 'client/dist')));
 
 // Catch all other routes and return the index file
 app.get('*', (req, res) => {
